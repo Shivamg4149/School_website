@@ -1,0 +1,81 @@
+#membership{
+    height: 734px;
+    width: 100vw;
+
+}
+#membership::before{
+    content: "";
+    background: url('../static/uttar-pradesh-government.jpg') no-repeat center center/cover;
+    height: 600px;
+    width: 600px;
+    z-index: -1;
+    position: absolute;
+    top: 240px;
+    left: 25vw;
+    opacity: 0.7;
+}
+
+#name,#fn,#aa,#ac,#dob,#adress,#about{
+    display: block;
+    width: 70%;
+    margin: 15px auto;
+}
+#gender{
+    margin-left: 190px;
+}
+#home{
+    height:250px;
+    /* width: 100vw; */
+}
+#home::before{
+    content: "";
+    animation: none;
+}
+h1{
+    text-align: center;
+}
+.button{
+    display: block;
+    margin: auto; 
+}
+
+table,td,th {
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+td{
+    height: 35px;
+    position: relative;
+    left: 15px;
+}
+table{
+    margin-left: 200px;
+    margin: 2px 5px 60px 180px;
+}
+.data{
+    font-weight: bolder;
+    position: relative;
+    left: 20px;
+}
+
+#details::before {
+    content: "";
+    background: url('../static/aaron-burden-6jYoil2GhVk-unsplash.jpg') no-repeat center center/cover;
+    height: 96vh;
+    width: 89vw;
+    z-index: -1;
+    position: absolute;
+    top: 150x;
+    opacity: 0.6;
+    left: 5vw;
+}
+ul{
+    background-color: #2c2c7b;
+
+}
+a{
+    color: white;
+}
+a:hover{
+    background-color: black;
+}

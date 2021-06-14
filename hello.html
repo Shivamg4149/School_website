@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script>
+        function check() {
+            var a, no, b, temp = 0;
+            var no = parseInt(document.getElementById("N").value);
+            b = no;
+            while(no > 0) {
+                a = no % 10;
+                no = parseInt(no / 10);
+                temp = temp * 10 + a;
+            }
+            if(temp == b)
+            { alert("Palindrome number"); }
+            else
+            {
+                alert("Not Palindrome number");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Palindrome</h1>
+    Enter any number:<input type="text" name="n" id="N"/><br>
+    <button onClick="check()">check</button>
+</body>
+
+</html>

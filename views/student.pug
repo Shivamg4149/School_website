@@ -1,0 +1,28 @@
+extends base.pug
+block style
+    style
+        include ../static/style.css
+    style
+        include ../static/student.css
+        include ../static/responsive.css
+block content
+  body  
+    form#membership(action='/student', method='POST')
+      h1 Student Detail
+      input#name(type='text', name='name', placeholder='Enter Your Name')
+      input#fn(type='text', name='father_names', placeholder=`Enter Your Father's Name`)
+      input#dob(type="date", name="dob",placeholder='Enter your date of birth')
+      input#aa(type="number", name="aa" placeholder='Enter your Aadhar number')
+      input#ac(type="number", name="ac" placeholder='Enter your Account number')
+      input#gender(type='radio' name='gender' value='male')
+      |  Male
+      br
+      input#gender(type='radio' name='gender' value='female')
+      |  Female
+      br
+      input#gender(type='radio' name='gender' value='other')
+      |  Other
+      input#adress(type='text', name='adress', placeholder='Enter Your Adress')
+      textarea#about(name='about', cols='30', rows='10', placeholder='Write About Yourself')
+      button.button Submit
+

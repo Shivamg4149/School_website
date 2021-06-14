@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;600;700;800&family=Ubuntu:wght@300;400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    height: 94px;
+    width: 98px;
+    margin: 2px 11px;
+    padding: 2px 11px;
+    /* text-align: center; */
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+    background-color: #313173;
+    color: whitesmoke;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 19vw;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    padding: 13px 7px;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 5px 15px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+a{
+    text-decoration: none;
+    color: #4a3530;
+    padding: 0px 14px;
+}
+a:hover{
+    background-color: white;
+    border-radius: 6px;
+}
+#logo{
+    position: absolute;
+    right: 0px;
+}
+#home{
+    flex-direction: column;
+    height: 260px;
+    width: 100%;
+    display: flex;
+    
+}
+#home::before{
+    content: "";
+    animation: animate 16s ease-in infinite;
+    height: 664px;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.9;
+    position: absolute;
+    top: 0px;
+}
+@keyframes animate {
+    0%,100% {
+        background: url('../static/photo/photo1.jpeg') no-repeat center center/cover;
+    }
+    20% {
+        background: url('../static/photo/photo2.jpeg') no-repeat center center/cover;
+    }
+    40% {
+        background: url('../static/photo/photo3.jpeg') no-repeat center center/cover;
+    }
+    60% {
+        background: url('../static/photo/photo4.jpeg') no-repeat center center/cover;
+    }
+    80% {
+        background: url('../static/photo/photo5.jpeg') no-repeat center center/cover;
+    }
+}
+
+.cont{
+    height: 549px;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin: 30px 7px;
+}
+.images{
+    height: 298px;
+    width: 254px;
+    border-radius: 45px;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+}
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+    width: 100vw;
+    padding-top: 20px;
+}
+.head{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 30px;
+}
+.para{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+#footer{
+    display: block;
+    margin: auto;
+}
+#tg{
+    height: 315px;
+}
+#tg>h1{
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+}
+#tg>h2{
+    text-align: center;
+    font-style: italic;
+}
+#vision,#goal{
+    padding: 20px 30px;
+    margin: 5px;
+    background-color: wheat;
+    border: 2px black solid;
+    border-radius: 12px;
+}
+.heading{
+    height: 48px;
+}
+.heading>h1{
+    text-align: center;
+    margin-top: 88px;
+    font-size: 40px;
+    background-color: wheat;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.last{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #846a6a;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 18px;
+}

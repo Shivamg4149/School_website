@@ -1,0 +1,31 @@
+html
+  head
+    title School
+    block scripts
+    
+    block style
+        style
+            include ../static/style.css
+            include ../static/responsive.css
+  body
+    div#home
+      div#top
+        img(src="../static/uttar-pradesh-government.jpg" alt="Logo")
+        div#heading
+          h1 Primary School Mathgovind  
+          h2 Koilsa Azamgarh-276141
+        img(id="logo" src="../static/sarva-shiksha-abhiyan-hindi-seeklogo.com.jpg", alt="Logo")   
+      nav#navbar
+        ul
+          li #[a(href="/") Home]
+          li #[a(href="/facility") Facility]
+          li #[a(href="/student") Student]
+          li #[a(href="/faculty") Faculity]
+          li #[a(href="/holiday") Holiday]
+    block content
+    block foot
+        #footer
+            p.last
+              |Copyright © 2020 | All right are reserved <br>
+              | By Primary School Mathgovind <br>
+              | Designed And Developed By Shivam Gupta
